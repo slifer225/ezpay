@@ -1,7 +1,6 @@
 package com.ezpay.interview.subscription.model;
 
 import com.ezpay.interview.subscription.constant.SubscriptionType;
-import com.sun.istack.internal.NotNull;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -9,16 +8,12 @@ import java.util.Date;
 
 public class SubscriptionForm implements Serializable {
 
-    @NotNull
     private BigDecimal amount;
 
-    @NotNull
     private SubscriptionType subscriptionType;
 
-    @NotNull
     private Date startDate;
 
-    @NotNull
     private Date endDate;
 
     // Not sure what is the purpose of this
